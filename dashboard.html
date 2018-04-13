@@ -9,9 +9,7 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
 
-
     <!--sample-->
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="style/tyle.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -48,13 +46,11 @@
     </style>
 
     <script src="js/sinch.min.js"></script>
+    <script src="jquery-ticker/jquery.jticker.min.js"></script>
 </head>
 <!-- head -->
 
 <body style="position: relative;top: 0px;">
-
-
-
     <!-- main content -->
     <div class="container-fluid" style="height: 100%; background-color: dimgrey;">
         <nav class="navbar fixed-top navbar-dark primary-color" style="height: 100px;">
@@ -68,7 +64,9 @@
         <!-- header ends-->
 
         <!--breaking news-->
-        <div class="card-header-pills" style="background-color: aquamarine;width: 100%;height: 1%;"></div>
+        <div class="ticker" data-duration="20" data-loop="2" data-effect="linear" style="position:absolute;display: block; background-color: aquamarine;width: 100%;height: 20px;">
+            <span>Breaking news!! Museveni is Marrying again.</span>
+        </div>
 
         <!--dynamic tabs begin-->
         <div class="row" style="position: relative;top:140px;">
@@ -240,13 +238,6 @@
                                 </div>
                             </div>
                         </div>
-                        <select class="mdb-select">
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
-                        <label>Example label</label>
                     </div>
 
                     <!--tab 2-->
@@ -1270,6 +1261,13 @@
                 from: [1900, 1, 1],
                 to: [2016, 2, 27]
             }]
+        });
+
+        $('.ticker').jTicker({
+            // Default options
+            duration: 50, // speed
+            loop: 1, // loops
+            effect: '' // animation type
         });
     </script>
 
