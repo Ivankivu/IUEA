@@ -22,7 +22,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="fontawesome/webcss/css/fontawesome-all.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
@@ -49,7 +49,7 @@
 
 
     <!-- Custom styles -->
-    <style type="text/css">
+    <style>
         .alert {
             margin: 0 auto 20px;
         }
@@ -57,83 +57,82 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-           <script type="text/javascript" src="js/html5shiv.js"></script>
-           <script type="text/javascript" src="js/respond.min.js"></script>
+           <script  src="js/html5shiv.js"></script>
+           <script  src="js/respond.min.js"></script>
         <![endif]-->
 </head>
 
-<body style="padding: 10px;">
-    <div class="container-fluid" style="height: 100%">
-     <nav class="nav-wrapper navbar navbar-dark" style="background-color: #6351ce;">
-<a class="navbar-brand" href="#">
-    <span><h1>ETARS</h1></span>  
-</a>
-</nav>  
-
-  
-<!-- Default form login -->
-<div class="row">
-<div class="col-md-4"></div>
-
-<div class="card col-md-4" style="align-content: center; margin-top:46px;margin-bottom: 46px;">
-<form class="md-form" style="padding:20px;">
-    <p class="h4 text-center mb-4">Sign in</p>
-
-   <!-- Material input -->
-<div class="md-form">
-    <i class="fa fa-envelope prefix"></i>
-    <input type="email" id="inputValidationEx" class="form-control validate">
-    <label for="inputValidationEx" data-error="wrong" data-success="right">Email</label>
-</div>
-
-    <br>
-
-  <!-- Material input -->
-<div class="md-form">
-    <i class="fa fa-lock prefix"></i>
-    <input type="password" id="inputValidationEx2" class="form-control validate">
-    <label for="inputValidationEx2" data-error="wrong" data-success="right">password</label>
-</div>
-    <div class="text-center mt-4">
-        <button class="btn btn-indigo" type="submit" href="dashboard.html">Login</button>
-    </div>
-</form>
-<!-- Default form login -->
-  </div>
-  
-   <div class="col-md-4"></div>
-        </div>
-        <!--Footer-->
-<footer class="page-footer font-small unique-color-dark pt-0" style="bottom:0px;width:100%;">
-
-    <div style="background-color: #6351ce;height:10px;">
-        
-    </div>
-    <div class="row">
-    <div class="footer-copyright py-3 text-left col-md-6" style="left:20px;">
-        <a href="#">
-           <h4>Emergency Track and Response</h4>
+<body>
+    <nav class=" navbar navbar-dark" style="background-color: #6351ce;">
+        <a class="navbar-brand" href="#">
+            <span>ETARS</span>
         </a>
-    </div>
-    
-     <div class="footer-copyright py-3 text-right col-md-6" style="right:20px;">
-        <p><a href="#">
-            <strong> ETARS</strong>
-            </a>© 2018 Copyright:
-        Version 1.0.</p>
-    </div>
-    <!--/.Copyright -->
-</div>
-</footer>
-<!--/.Footer-->
-    </div>
+    </nav>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
+    <div class="container-fluid">
+        <!-- Default form login -->
+        <div class="row">
+            <div class=" col-md-4 "></div>
+
+            <div class="card col-md-4 " style="align-content: center; top: 110px;margin-bottom: 46px; ">
+                <form class="md-form " style="padding:20px; ">
+                    <p class="h4 text-center mb-4 ">Sign in</p>
+
+                    <!-- Material input -->
+                    <div class="md-form ">
+                        <i class="fa fa-envelope prefix "></i>
+                        <input type="email" id="inputValidEx" class="form-control validate">
+                        <label for="inputValidEx" data-error="wrong " data-success="right">Email</label>
+                    </div>
+
+                    <br>
+
+                    <!-- Material input -->
+                    <div class="md-form ">
+                        <i class="fa fa-lock prefix "></i>
+                        <input type="password" id="inputValidationEx2" class="md-input form-control validate">
+                        <label for="inputValidationEx2" data-error="wrong" data-success="right">password</label>
+                    </div>
+                    <div class="text-center mt-4 ">
+                        <button class="btn btn-indigo" type="submit">Login</button>
+                    </div>
+                </form>
+                <!-- Default form login -->
+            </div>
+
+            <div class="col-md-4 "></div>
+        </div>
+
+    </div>
+    <!--Footer-->
+    <footer class="page-footer font-small unique-color-dark pt-0 mb-0 " style="position: absolute;bottom:0px;width:100%; ">
+
+        <div style="background-color: #6351ce;height:10px; ">
+
+        </div>
+        <div class="row ">
+            <div class="footer-copyright py-3 px-auto text-left col-md-6 ">
+                <a href="# ">
+                    <h4 class="ml-3">Emergency Track and Response</h4>
+                </a>
+            </div>
+
+            <div class="footer-copyright py-3 px-auto text-right col-md-6 ">
+                <p class="mr-3">
+                    <a href="# ">
+                        <strong> ETARS</strong>
+                    </a>© 2018 Copyright: Version 1.0.</p>
+            </div>
+            <!--/.Copyright -->
+        </div>
+    </footer>
+    <!--/.Footer-->
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script>
         $(function() {
             // Setting focus
-            $('input[name="email"]').focus();
+            $('input[name="email "]').focus();
 
             // Setting width of the alert box
             var alert = $('.alert');
@@ -147,13 +146,13 @@
             $('.alert').width(formWidth - 2 * alertPadding);
         });
     </script>
-     <script type="text/javascript" src="style/jquery.min.js"></script>
+    <script src="js/jquery.min.js "></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="style/popper.min.js"></script>
+    <script src="js/popper.min.js "></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="style/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="style/mdb.min.js"></script>
+    <script src="js/mdb.min.js "></script>
 </body>
 
 </html>
